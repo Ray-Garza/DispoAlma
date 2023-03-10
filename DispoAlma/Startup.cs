@@ -12,7 +12,9 @@ namespace DispoAlma
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(x =>
+            x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles);
+            
 
             services.AddDbContext<ApplicationDbContext>(options =>
             //Conexion a la base de datos

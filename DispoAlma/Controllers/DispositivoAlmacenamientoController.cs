@@ -60,7 +60,8 @@ namespace DispoAlma.Controllers
         [HttpGet("/lista")]
         public async Task<ActionResult<List<DispositivoAlmacenamiento>>> GetAll()
         {
-            return await _context.DispositivoAlmacenamientos.ToListAsync();
+            //
+            return await _context.DispositivoAlmacenamientos.Include(x => x.ProveedorId).ToListAsync();
         }
 
         [HttpPut("{id:int}")]

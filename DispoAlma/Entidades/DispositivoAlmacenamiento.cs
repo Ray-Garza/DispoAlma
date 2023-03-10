@@ -10,8 +10,6 @@
         public int Velocidad_escritura { get; set; }
         public int Velocidad_lectura { get; set; } 
         public int Cantidad { get;set; }
-
-        //:o
         public int ProveedorId { get; set; }
         public Proveedor provedor { get; set; }
     }
