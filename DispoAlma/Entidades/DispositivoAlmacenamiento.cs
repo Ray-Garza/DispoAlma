@@ -2,13 +2,17 @@
 {
     public class DispositivoAlmacenamiento
     {
-        public int id_dispositivo { get; set; }
-        public string nombre_dispositivo { get; set; }
+        public int Id { get; set; }
+        public string Nombre_dispositivo { get; set; }
 
-        public int almacenamiento_dispositivo { get; set; }
-        public string descripcion_dispositivo { get; set; }
-        public int velocidad_escritura { get; set; }
-        public int velocidad_lectura { get; set; } 
-        public int cantidad { get;set; }
+        public int Almacenamiento_dispositivo { get; set; }
+        public string Descripcion_dispositivo { get; set; }
+        public int Velocidad_escritura { get; set; }
+        public int Velocidad_lectura { get; set; } 
+        public int Cantidad { get;set; }
+
+        //:o
+        public int ProveedorId { get; set; }
+        public Proveedor provedor { get; set; }
     }
 }

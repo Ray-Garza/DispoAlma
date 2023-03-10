@@ -9,5 +9,6 @@ namespace DispoAlma
 
         }
         public DbSet<DispositivoAlmacenamiento> DispositivoAlmacenamientos { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
     }
 }
